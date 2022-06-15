@@ -21,11 +21,11 @@
                     <td>
                         <table id="centro" runat="server">
                             <tr id="fila">
-                                <th class="celda1">Nombre</th>
-                                <th class="celda1">Apellido</th>
-                                <th class="celda1">DNI</th>
-                                <th class="celda1">E-mail</th>
-                                <th class="celda1">Turno</th>
+                                <th class="celda1c">Nombre</th>
+                                <th class="celda1c">Apellido</th>
+                                <th class="celda1c">DNI</th>
+                                <th class="celda1c">E-mail</th>
+                                <th class="celda1c">Turno</th>
                             </tr>
                             <tr id="fila1">
                                 <td class="celdaDato"></td>
@@ -36,12 +36,17 @@
                             </tr>
                             <tr>
                                 <td colspan="5">
-                                    <asp:TextBox TextMode="MultiLine" Columns="80" Rows="10" runat="server" ID="comentario" />
+                                    <asp:Label Text="Comentario" runat="server" CssClass="comentario"/>
                                 </td>
                             </tr>
                             <tr>
                                 <td colspan="5">
-                                    <asp:Button Text="Enviar" runat="server" CssClass="btn" />
+                                    <asp:TextBox TextMode="MultiLine" Columns="80" Rows="10" runat="server" ID="comentario" placeholder="Ingresar un comentario"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">
+                                    <asp:Button Text="Guardar" runat="server" CssClass="btn" />
                                 </td>
                             </tr>
                         </table>

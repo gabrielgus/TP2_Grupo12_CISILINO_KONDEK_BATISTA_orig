@@ -51,12 +51,57 @@ namespace WebApplication2
         protected global::System.Web.UI.HtmlControls.HtmlTableRow fila1;
 
         /// <summary>
-        /// comentario control.
+        /// lblnombreIngresado control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox comentario;
+        protected global::System.Web.UI.HtmlControls.HtmlTableCell lblnombreIngresado;
+
+        /// <summary>
+        /// lblapellidoIngresado control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableCell lblapellidoIngresado;
+
+        /// <summary>
+        /// lbldniIngresado control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableCell lbldniIngresado;
+
+        /// <summary>
+        /// lblemailIngresado control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableCell lblemailIngresado;
+
+        /// <summary>
+        /// lblTurnoIngresado control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableCell lblTurnoIngresado;
+
+        /// <summary>
+        /// txtcomentario control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtcomentario;
     }
 }

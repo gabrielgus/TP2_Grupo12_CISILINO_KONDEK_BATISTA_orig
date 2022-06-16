@@ -14,12 +14,12 @@
         <div>
 
             <div id="div">
-                <table class="fondo" runat="server">
+                <table class="fondo">
                     <tbody>
                         <tr>
                             <td>
 
-                                <table id="centro" runat="server">
+                                <table id="centro">
                                     <thead>
                                         <tr id="fila">
                                             <th class="celda1" colspan="5">
@@ -85,9 +85,14 @@
                                         <tr id="fila4">
                                             <td colspan="5">
                                                 <div class="botones">
-                                                    <asp:Button ID="Button1" runat="server" Text="Enviar" CssClass="btn" />
+                                                    <asp:Button ID="Button1" runat="server" Text="Enviar" CssClass="btn" OnClick="Button1_Click" OnClientClick="return validarForm()"/>
                                                     <asp:Button ID="Button2" runat="server" Text="Limpiar" CssClass="btn" />
                                                 </div>
+                                            </td>
+                                        </tr>
+                                        <tr id="fila5">
+                                            <td colspan="5">
+                                                  <a runat="server" href="ListadoComentarios.aspx" id="alinkcomentarios" class="alink">Ir al listado de comentarios</a>
                                             </td>
                                         </tr>
                                     </tbody>

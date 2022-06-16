@@ -24,8 +24,25 @@
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-#fila, #fila1, #fila2, #fila3, #fila4 {
+#fila, #fila1, #fila2, #fila3, #fila4, #fila5 {
     height: 40px;
+}
+
+.alink {
+    color: white;
+}
+
+#gvComentarios {
+    margin: 0 auto;
+}
+
+.coments {
+    background-color: rgb(88, 86, 90);
+    width: 90%;
+    height: auto;
+    margin: 0px auto;
+    padding: 20px 0px 0px 0px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .celda1 {

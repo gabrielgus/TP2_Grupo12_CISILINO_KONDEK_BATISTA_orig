@@ -44,6 +44,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -70,16 +71,32 @@
     <Content Include="css\Estilos.css" />
     <Content Include="IngresoAlumno.aspx" />
     <Content Include="js\JavaScript.js" />
+    <Content Include="ListadoComentarios.aspx" />
     <Content Include="MostrarDatos.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConexionDB.cs">
+      <DependentUpon>ConexionDB.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="ConexionDB.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConexionDB.dbml</DependentUpon>
+    </Compile>
     <Compile Include="IngresoAlumno.aspx.cs">
       <DependentUpon>IngresoAlumno.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="IngresoAlumno.aspx.designer.cs">
       <DependentUpon>IngresoAlumno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoComentarios.aspx.cs">
+      <DependentUpon>ListadoComentarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListadoComentarios.aspx.designer.cs">
+      <DependentUpon>ListadoComentarios.aspx</DependentUpon>
     </Compile>
     <Compile Include="MostrarDatos.aspx.cs">
       <DependentUpon>MostrarDatos.aspx</DependentUpon>
@@ -91,6 +108,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ConexionDB.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>ConexionDB.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="ConexionDB.dbml.layout">
+      <DependentUpon>ConexionDB.dbml</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -98,6 +123,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

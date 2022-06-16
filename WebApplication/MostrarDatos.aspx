@@ -28,25 +28,25 @@
                                 <th class="celda1c">Turno</th>
                             </tr>
                             <tr id="fila1">
-                                <td class="celdaDato"></td>
-                                <td class="celdaDato"></td>
-                                <td class="celdaDato"></td>
-                                <td class="celdaDato"></td>
-                                <td class="celdaDato"></td>
+                                <td class="celdaDato" id="lblnombreIngresado" runat="server"></td>
+                                <td class="celdaDato" id="lblapellidoIngresado" runat="server"></td>
+                                <td class="celdaDato" id="lbldniIngresado" runat="server"></td>
+                                <td class="celdaDato" id="lblemailIngresado" runat="server"></td>
+                                <td class="celdaDato" id="lblTurnoIngresado" runat="server"></td>
                             </tr>
                             <tr>
                                 <td colspan="5">
-                                    <asp:Label Text="Comentario" runat="server" CssClass="comentario"/>
+                                    <asp:Label Text="Comentario" runat="server" CssClass="comentario" />
                                 </td>
                             </tr>
                             <tr>
                                 <td colspan="5">
-                                    <asp:TextBox TextMode="MultiLine" Columns="80" Rows="10" runat="server" ID="comentario" placeholder="Ingresar un comentario"/>
+                                    <asp:TextBox TextMode="MultiLine" Columns="80" Rows="10" runat="server" ID="txtcomentario" placeholder="Ingresar un comentario"/>
                                 </td>
                             </tr>
                             <tr>
                                 <td colspan="5">
-                                    <asp:Button Text="Guardar" runat="server" CssClass="btn" />
+                                    <asp:Button Text="Guardar" runat="server" CssClass="btn" OnClick="Guardar_Click"/>
                                 </td>
                             </tr>
                         </table>

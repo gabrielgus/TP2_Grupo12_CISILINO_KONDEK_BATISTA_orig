@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="AlumnosDB" Class="ConexionDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="WebSettings" ConnectionString="Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=AlumnosDB;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="AlumnosDBConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-DC7ADPP\PP2;Initial Catalog=AlumnosDB;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="AlumnosDBConnectionString2" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Alumnos" Member="Alumnos">
     <Type Name="Alumno">
       <Column Name="idAlumno" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />

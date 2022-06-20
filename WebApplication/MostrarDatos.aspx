@@ -4,7 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-        <link href="css/Estilos.css" rel="stylesheet" />
+    <link href="css/Estilos.css" rel="stylesheet" />
+    <script src="js/ValidacionesComentarios.js"></script>
     <title></title>
 </head>
 <body>
@@ -46,7 +47,7 @@
                             </tr>
                             <tr>
                                 <td colspan="5">
-                                    <asp:Button Text="Guardar" runat="server" CssClass="btn" OnClick="Guardar_Click"/>
+                                    <asp:Button Text="Guardar" runat="server" CssClass="btn" OnClick="Guardar_Click" OnClientClick="return validarComentario()"/>
                                 </td>
                             </tr>
                         </table>

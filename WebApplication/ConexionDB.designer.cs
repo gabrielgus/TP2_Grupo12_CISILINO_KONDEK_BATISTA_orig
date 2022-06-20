@@ -39,7 +39,7 @@ namespace WebApplication2
     #endregion
 		
 		public ConexionDBDataContext() : 
-				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["AlumnosDBConnectionString"].ConnectionString, mappingSource)
+				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["AlumnosDBConnectionString2"].ConnectionString, mappingSource)
 		{
 			OnCreated();
 		}

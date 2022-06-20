@@ -91,7 +91,10 @@
                                             </td>
                                         </tr>
                                         <tr id="fila5">
-                                            <td colspan="5">
+                                            <td colspan="3">
+                                                  <a runat="server" href="ListadoAlumnos.aspx" id="a1" class="alink">Ir al listado de alumnos</a>
+                                            </td>
+                                            <td colspan="2">
                                                   <a runat="server" href="ListadoComentarios.aspx" id="alinkcomentarios" class="alink">Ir al listado de comentarios</a>
                                             </td>
                                         </tr>
@@ -106,7 +109,7 @@
 
         </div>
     </form>
-    <script src="js/JavaScript.js"></script>
+    <script src="js/ValidacionesIngreso.js"></script>
 
 </body>
 </html>

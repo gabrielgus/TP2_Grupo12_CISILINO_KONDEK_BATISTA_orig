@@ -20,7 +20,7 @@
                     <td>
                         <table class="coments">
                             <tr>
-                                <td>
+                                <td colspan="2">
                                     <asp:GridView ID="gvComentarios" runat="server" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical">
                                         <AlternatingRowStyle BackColor="#CCCCCC" />
                                         <FooterStyle BackColor="#CCCCCC" />
@@ -35,6 +35,9 @@
                                 </td>
                             </tr>
                             <tr id="fila">
+                                <td>
+                                    <a href="ListadoAlumnos.aspx" class="alink">Ir al listado de alumnos</a>
+                                </td>
                                 <td>
                                     <a href="IngresoAlumno.aspx" class="alink">Ir al ingreso de alumnos</a>
                                 </td>

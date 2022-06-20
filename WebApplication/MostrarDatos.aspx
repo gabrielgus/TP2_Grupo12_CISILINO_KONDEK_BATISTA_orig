@@ -4,13 +4,13 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-        <link href="css/Estilos.css" rel="stylesheet" />
+    <link href="css/Estilos.css" rel="stylesheet" />
+    <script src="js/Validaciones.js"></script>
     <title></title>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-
             <table class="fondo" runat="server">
                 <tr>
                     <td>
@@ -46,7 +46,7 @@
                             </tr>
                             <tr>
                                 <td colspan="5">
-                                    <asp:Button Text="Guardar" runat="server" CssClass="btn" OnClick="Guardar_Click"/>
+                                    <asp:Button Text="Guardar" runat="server" CssClass="btn" OnClick="Guardar_Click" OnClientClick="return validarComentario()"/>
                                 </td>
                             </tr>
                         </table>

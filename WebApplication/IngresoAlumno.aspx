@@ -7,6 +7,7 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="css/Estilos.css" rel="stylesheet" />
+    <script src="js/Validaciones.js"></script>
     <title></title>
 </head>
 <body>
@@ -86,12 +87,15 @@
                                             <td colspan="5">
                                                 <div class="botones">
                                                     <asp:Button ID="Button1" runat="server" Text="Enviar" CssClass="btn" OnClick="Button1_Click" OnClientClick="return validarForm()"/>
-                                                    <asp:Button ID="Button2" runat="server" Text="Limpiar" CssClass="btn" />
+                                                    <asp:Button ID="Button2" runat="server" Text="Limpiar" CssClass="btn" OnClientClick="this.form.reset(); return false;" />
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr id="fila5">
-                                            <td colspan="5">
+                                            <td colspan="3">
+                                                  <a runat="server" href="ListadoAlumnos.aspx" id="a1" class="alink">Ir al listado de alumnos</a>
+                                            </td>
+                                            <td colspan="2">
                                                   <a runat="server" href="ListadoComentarios.aspx" id="alinkcomentarios" class="alink">Ir al listado de comentarios</a>
                                             </td>
                                         </tr>
@@ -106,8 +110,6 @@
 
         </div>
     </form>
-    <script src="js/JavaScript.js"></script>
-
 </body>
 </html>
 

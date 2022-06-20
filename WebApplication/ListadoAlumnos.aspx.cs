@@ -29,9 +29,13 @@ namespace WebApplication2
             int idAlumno = int.Parse(gvr.Cells[1].Text);
 
             ConexionDBDataContext instancia = new ConexionDBDataContext();
-            var consultaLinq = (from t in instancia.Alumnos where t.idAlumno == idAlumno select t).FirstOrDefault();
+            Alumno alumno = (from t in instancia.Alumnos where t.idAlumno == idAlumno select t).FirstOrDefault();
 
-            instancia.Alumnos.DeleteOnSubmit(consultaLinq);
+            var comentarios = (from t in instancia.Comentarios where t.DNI == alumno.DNI select t);
+
+            instancia.Alumnos.DeleteOnSubmit(alumno);
+            instancia.Comentarios.DeleteAllOnSubmit(comentarios);
+
             instancia.SubmitChanges();
 
             Response.Redirect("ListadoAlumnos.aspx");

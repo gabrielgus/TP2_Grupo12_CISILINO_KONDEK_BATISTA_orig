@@ -46,7 +46,18 @@
                             </tr>
                             <tr>
                                 <td colspan="5">
-                                    <asp:Button Text="Guardar" runat="server" CssClass="btn" OnClick="Guardar_Click" OnClientClick="return validarComentario()"/>
+                                    <asp:Button Text="Guardar Comentario" runat="server" CssClass="btn" OnClick="Guardar_Click" OnClientClick="return validarComentario()"/>
+                                </td>
+                            </tr>
+                             <tr id="fila6">
+                                <td colspan="2">
+                                    <a href="IngresoAlumno.aspx" class="alink">Ir al ingreso de alumnos</a>
+                                </td>
+                                 <td>
+                                    <a runat="server" href="ListadoAlumnos.aspx" id="a1" class="alink">Ir al listado de alumnos</a>
+                                </td>
+                                <td colspan="2">
+                                    <a href="ListadoComentarios.aspx" class="alink">Ir al listado de comentarios</a>
                                 </td>
                             </tr>
                         </table>

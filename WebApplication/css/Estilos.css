@@ -32,11 +32,7 @@
     color: white;
 }
 
-#gvComentarios {
-    margin: 0 auto;
-}
-
-#gvAlumnos {
+#gvComentarios, #gvAlumnos {
     margin: 0 auto;
 }
 

@@ -24,5 +24,3 @@ CREATE TABLE Comentarios
 
 select * from Alumnos;
 select * from Comentarios;
-
-drop table comentarios;

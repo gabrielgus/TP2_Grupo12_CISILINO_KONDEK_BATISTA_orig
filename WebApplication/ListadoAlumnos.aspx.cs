@@ -26,10 +26,10 @@ namespace WebApplication2
             //Get the row that contains this button
             GridViewRow gvr = (GridViewRow) btn.NamingContainer;
 
-            int asd = int.Parse(gvr.Cells[1].Text);
+            int idAlumno = int.Parse(gvr.Cells[1].Text);
 
             ConexionDBDataContext instancia = new ConexionDBDataContext();
-            var consultaLinq = (from t in instancia.Alumnos where t.idAlumno == asd select t).FirstOrDefault();
+            var consultaLinq = (from t in instancia.Alumnos where t.idAlumno == idAlumno select t).FirstOrDefault();
 
             instancia.Alumnos.DeleteOnSubmit(consultaLinq);
             instancia.SubmitChanges();

@@ -87,7 +87,7 @@
                                             <td colspan="5">
                                                 <div class="botones">
                                                     <asp:Button ID="Button1" runat="server" Text="Enviar" CssClass="btn" OnClick="Button1_Click" OnClientClick="return validarForm()"/>
-                                                    <asp:Button ID="Button2" runat="server" Text="Limpiar" CssClass="btn" />
+                                                    <asp:Button ID="Button2" runat="server" Text="Limpiar" CssClass="btn" OnClientClick="this.form.reset(); return false;" />
                                                 </div>
                                             </td>
                                         </tr>

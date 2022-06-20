@@ -5,13 +5,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <link href="css/Estilos.css" rel="stylesheet" />
-    <script src="js/ValidacionesComentarios.js"></script>
+    <script src="js/Validaciones.js"></script>
     <title></title>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-
             <table class="fondo" runat="server">
                 <tr>
                     <td>

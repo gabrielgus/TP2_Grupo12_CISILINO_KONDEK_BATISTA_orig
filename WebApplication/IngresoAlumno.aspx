@@ -7,6 +7,7 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="css/Estilos.css" rel="stylesheet" />
+    <script src="js/Validaciones.js"></script>
     <title></title>
 </head>
 <body>
@@ -109,8 +110,6 @@
 
         </div>
     </form>
-    <script src="js/ValidacionesIngreso.js"></script>
-
 </body>
 </html>
 

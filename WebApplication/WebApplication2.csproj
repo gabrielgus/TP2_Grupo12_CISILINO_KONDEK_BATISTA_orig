@@ -70,8 +70,7 @@
   <ItemGroup>
     <Content Include="css\Estilos.css" />
     <Content Include="IngresoAlumno.aspx" />
-    <Content Include="js\ValidacionesComentarios.js" />
-    <Content Include="js\ValidacionesIngreso.js" />
+    <Content Include="js\Validaciones.js" />
     <Content Include="ListadoComentarios.aspx" />
     <Content Include="MostrarDatos.aspx" />
     <Content Include="Web.config" />
